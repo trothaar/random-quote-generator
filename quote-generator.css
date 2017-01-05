@@ -1,3 +1,34 @@
 /* Random Quote Generator */
 
-/* TODO */
+.well{
+border-radius:3px;
+position:relative;
+margin:8% auto auto auto;
+width:500px;
+padding:40px 50px;
+display:table;
+background-color:#ffffff;
+}
+
+#quoteDisplay{
+  padding: 25px;
+  font-size: 2em;
+}
+
+#getNew{
+  float:left;
+}
+
+#tweetThis{
+  float:right;
+}
+
+body {
+    background-image: url("http://wildowldigital.com/wp-content/uploads/2017/01/road.jpg");
+    background-color: #000099;
+    background-size: 100%;
+}
+
+.page-header{
+  color: #FFFFFF;
+}
