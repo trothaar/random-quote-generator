@@ -23,12 +23,17 @@ background-color:#ffffff;
   float:right;
 }
 
-body {
-    background-image: url("http://wildowldigital.com/wp-content/uploads/2017/01/road.jpg");
+html, body {
+    background-image: url("http://wildowldigital.com/wp-content/uploads/2017/01/dark-sky.jpg");
     background-color: #000099;
     background-size: 100%;
 }
 
-.page-header{
+#theHeadline, #theSubhead {
+  text-align: center;
   color: #FFFFFF;
+}
+
+p, div{
+  font-family: 'Crimson Text', serif;
 }

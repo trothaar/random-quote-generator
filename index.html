@@ -3,7 +3,9 @@
 <head>
   <title>Random Quote Generator</title>
   <meta charset="utf-8">
-<!--  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="quote-generator.css">
@@ -21,14 +23,21 @@
 <div class="container">
 
   <div class = "page-header">
-  <h1>Random Quote Generator</h1>
+  <h1 id="theHeadline">Random Quote Generator</h1>
+  <h2 id= "theSubhead">Generate and Tweet an Inspirational Quote</h2>
 </div>
 
   <div class = "well">
   <div id = "quoteDisplay">
   <!-- Quote will display here -->
 </div><button id ="getNew" onclick="newQuote()">Get a New Quote</button>
-<i class="fa fa-twitter fa-2x" id="tweetThis"></i>
+<i class="fa fa-twitter fa-2x" id="tweetThis" onClick="tweetIt()"></i>
+</div>
+
+<div id="footer">
+  <div class="container text-center">
+    <p class="text-muted credit" style="color:#ffffff">By Teresa Rothaar</p>
+  </div>
 </div>
 
 <!-- JavaScript -->

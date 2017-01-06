@@ -29,7 +29,12 @@ var quotes = [
 "Most brands started from a strong base and kept a strong belief. - Daymond John",
 "When you shake somebody\’s hand, it\’s got to mean something. - Marcus Lemonis",
 "Things work out best for those who make the best of how things work out. - John Wooden",
-"You don\’t quit because you happen to be behind. You want to see how you do. And who knows? Maybe somebody will stumble. - Ron Paul"
+"You don\’t quit because you happen to be behind. You want to see how you do. Maybe somebody will stumble. - Ron Paul",
+"Opportunities don\’t happen; you create them. - Chris Grosser",
+"You must either modify your dreams or magnify your skills. – Jim Rohn",
+"To be successful, you have to have your heart in your business, and your business in your heart. – Sr. Thomas Watson",
+"Success is often achieved by those who don\’t know that failure is inevitable. – Coco Chanel",
+"The successful man is the one who finds out what is the matter with his business before his competitors do. – Roy L. Smith"
 ]
 
 
@@ -40,4 +45,12 @@ it by the array's length. */
 function newQuote(){
   var randomNumber = Math.floor(Math.random() * quotes.length);
   document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
+
+/* Tweet out the quote and add the hashtag #quote */
+function tweetIt () {
+  var phrase = document.getElementById('quoteDisplay').innerText + " #quote";
+  var tweetUrl = 'https://twitter.com/share?text=' +
+    encodeURIComponent(phrase);
+  window.open(tweetUrl);
 }
